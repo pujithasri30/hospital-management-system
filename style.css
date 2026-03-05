@@ -1,0 +1,203 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Center page fully */
+body {
+  background: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+/* Card Container */
+.container {
+  background: white;
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Inputs */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Buttons */
+button {
+  background: #2d89ef;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #1b5fbf;
+}
+
+/* Section Divider */
+hr {
+  margin: 25px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+/* Result Box */
+#doctorResult {
+  background: #eef5ff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* History Box */
+#history {
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+}
+.dashboard-body {
+  background: #f4f6f9;
+  padding: 40px;
+}
+
+.dashboard-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.dashboard-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #2c3e50;
+}
+
+.dashboard-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.tab-btn {
+  padding: 12px 20px;
+  border: none;
+  background: #dfe6e9;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.tab-btn.active {
+  background: #2d89ef;
+  color: white;
+}
+
+.tab-btn:hover {
+  background: #74b9ff;
+  color: white;
+}
+
+.dashboard-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.tab-section {
+  display: none;
+}
+
+.active-section {
+  display: block;
+}
+.hospital-card {
+  background: #f9fbff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #e3e8ef;
+}
+
+.hospital-card:hover {
+  background: #eaf3ff;
+  transform: translateY(-3px);
+}
+.history-card {
+  background: #f9fbff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#reportsList {
+  margin-top: 20px;
+}
+/* ============================= */
+/* ADMIN CARDS STYLING */
+/* ============================= */
+
+.history-card {
+  background: #ffffff;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+/* Hover Effect */
+.history-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  background-color: #f5f9ff;
+}
+
+/* Selected Card */
+.selected-card {
+  border: 2px solid #2d89ef;
+  background-color: #eaf3ff;
+}
+.loader {
+  text-align: center;
+  padding: 20px;
+  font-weight: 500;
+  color: #555;
+}

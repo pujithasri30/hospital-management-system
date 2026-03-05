@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-body">
+
+  <div class="dashboard-container">
+
+    <h1 class="dashboard-title">Patient Dashboard</h1>
+
+    <!-- Tabs -->
+    <div class="dashboard-tabs">
+      <button class="tab-btn active" onclick="showTab('book', this)">Book Appointment</button>
+      <button class="tab-btn" onclick="showTab('history', this)">Appointment History</button>
+      <button class="tab-btn" onclick="showTab('reports', this)">Reports</button>
+    </div>
+
+    <!-- Tab Sections -->
+    <div id="book" class="tab-section active-section">
+
+  <h3>Select Location</h3>
+
+  <select id="locationSelect">
+    <option value="">Select Location</option>
+    <option value="Hyderabad">Hyderabad</option>
+    <option value="Vijayawada">Vijayawada</option>
+  </select>
+
+  <div id="hospitalList"></div>
+
+  <!-- Booking Section (Hidden Initially) -->
+  <div id="bookingSection" style="display:none;">
+
+    <button id="backToHospitals">← Change Hospital</button>
+
+    <h3 id="selectedHospitalTitle"></h3>
+
+    <input id="symptom" placeholder="Enter symptoms">
+    <button id="findDoctorBtn">Find Doctor</button>
+
+    <div id="doctorResult"></div>
+
+  </div>
+
+</div>
+
+
+
+      <div id="history" class="tab-section">
+  <h3>Appointments History</h3>
+  <div id="historyContent"></div>
+</div>
+
+
+    <div id="reports" class="tab-section">
+  <h3>Medical Reports</h3>
+
+  <input type="file" id="reportFile">
+  <button id="uploadReportBtn">Upload File</button>
+
+  <div id="reportsList"></div>
+</div>
+
+
+    </div>
+
+  </div>
+
+<script type="module" src="js/patient.js"></script>
+
+<script>
+function showTab(id, element) {
+  document.querySelectorAll('.tab-section').forEach(sec => {
+    sec.classList.remove('active-section');
+  });
+
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+
+  document.getElementById(id).classList.add('active-section');
+  element.classList.add('active');
+}
+
+
+</script>
+
+</body>
+</html>

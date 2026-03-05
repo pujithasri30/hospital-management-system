@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-body">
+
+<div class="dashboard-container">
+  <h1 class="dashboard-title">Admin Dashboard</h1>
+
+  <div id="hospitalSection">
+    <h3>Hospitals</h3>
+    <div id="adminHospitals">
+      <div class="loader">Loading hospitals...</div>
+    </div>
+  </div>
+
+  <div id="doctorSection" style="display:none;">
+    <button id="backToHospitals">← Back to Hospitals</button>
+    <h3 id="selectedHospitalTitle"></h3>
+    <div id="adminDoctors">
+      <div class="loader">Loading doctors...</div>
+    </div>
+  </div>
+
+  <div id="appointmentSection" style="display:none;">
+    <button id="backToDoctors">← Back to Doctors</button>
+    <h3 id="selectedDoctorTitle"></h3>
+    <div id="adminAppointments">
+      <div class="loader">Loading appointments...</div>
+    </div>
+  </div>
+
+</div>
+
+<script type="module" src="js/admin.js"></script>
+</body>
+</html>
